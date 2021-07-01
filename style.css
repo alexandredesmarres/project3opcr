@@ -1,0 +1,1184 @@
+
+body {
+  margin: auto;
+}
+
+/*page d'accueil */
+.pagedaccueil {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.3fr 0.5fr 2fr;
+}
+
+.searchcity {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.reservation {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 250px;
+}
+
+.fonction {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-top: 15px;
+}
+
+.lesliensrestaurants {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: #F6F6F6;
+}
+
+/*search section */
+.searchcity {
+  margin-top: 30px;
+  background-color: #EBEBEB;
+  box-shadow: 0px -3px 10px grey;
+}
+
+.searchcity {
+  display: flex;
+  justify-content: center;
+}
+
+.searchcity i {
+  margin-top: 15px;
+}
+
+/*reservation section*/
+.reservation {
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+/* Fonction section */
+.fonction {
+  margin-bottom: 50px;
+}
+
+/* les liens des 4 restaurants */
+.lesliensrestaurants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 0.1fr;
+  grid-gap: 25px;
+  padding: 10px;
+}
+
+.liensrestaurantstitle {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 10px;
+}
+
+.restaurantun {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.restaurantdeux {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.restauranttrois {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.restaurantquatre {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.carte1 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte2 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte3 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte4 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.lesrestaurants {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 10px 10px 10px #DCDCDC;
+  font-size: 18px;
+}
+
+.titledurestaurant, .paragraphecarterestaurant {
+  margin-left: 10px;
+}
+
+.paragraphecarterestaurant {
+  margin-top: -15px;
+}
+
+.lesliensrestaurants a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Placement coeur */
+.titledurestaurantpluscoeur {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  grid-template-rows: 1fr;
+}
+
+.titledurestaunrant {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hearttrois {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hearttrois {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/*icone NEW */
+.new {
+  color: #2F8570;
+  background-color: #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+}
+
+/*Les 4 pages */
+/* la fleche back */
+.fa-arrow-left {
+  color: black;
+}
+
+/* la photo du restaurant " mangé " par le bloc en dessous */
+.placementphoto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.25fr;
+}
+
+.photodurestau {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  z-index: 1;
+}
+
+.nomdurestau {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  z-index: 10;
+}
+
+.photodurestau img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* le bloc Nom du restau + le coeur aligné */
+.nomdurestau {
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+  grid-template-rows: 1fr;
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+}
+
+.lenom {
+  font-family: "Shrikhand";
+  margin-left: 10px;
+}
+
+.lenom {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.heartquatre {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/* placement coeur */
+.heartquatre {
+  margin-left: 20px;
+  margin-top: 22px;
+}
+
+/* mise en place menu entier */
+.titledesentrees, .titledesplats, .titledesdesserts {
+  margin-left: 10px;
+}
+
+.menuentier {
+  background-color: #F6F6F6;
+}
+
+.line {
+  width: 45px;
+  border-bottom: 4px solid #99E2D0;
+  margin-left: 10px;
+}
+
+/*mise en place entré */
+.allstarter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.titledesentrees {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.line {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#case-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#case-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/*spécial la note enchanté 4 entrées */
+.allstarterspecial {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+}
+
+.titledesentrees {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-weight: normal;
+}
+
+#case-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#case-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#case-10 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+/*mise en place plat  */
+.alldish {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.titledesplats {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-weight: normal;
+}
+
+#case-4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#case-6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/*mise en place dessert  */
+.allfinish {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+}
+
+.titledesdesserts {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-weight: normal;
+}
+
+#case-7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-8 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#case-9 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/* mise en place entré plat dessert */
+.menu__grid__case {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 97%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+}
+
+.menu__grid__case:hover .validation__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-animation: slide-left 0.5s ease;
+  animation: slide-left 0.5s ease;
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+
+.menu__grid__case:hover .menu__case__price {
+  padding-right: 70px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu__grid__case .validation__box {
+  display: none;
+  position: absolute;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 13px;
+  height: 100%;
+}
+
+.menu__grid__case .validation__box i {
+  font-size: 30px;
+  color: white;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-animation: rotate 0.5s both;
+  animation: rotate 0.5s both;
+}
+
+.menu__case__dish {
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu__case__dish p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu__case__dish-title {
+  font-weight: bold;
+}
+
+.menu__case__price {
+  padding-right: 20px;
+  font-weight: bold;
+  padding-left: 7px;
+  margin-top: 25px;
+}
+
+.dish-and-price {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*page d'accueil */
+/* bouton explorer */
+.boutonexplorer {
+  border: none;
+  border-radius: 30px;
+  height: 60px;
+  font-size: 20px;
+  padding: 10px;
+  background: linear-gradient(-20deg, #9356DC, #FF79DA);
+  cursor: grab;
+  box-shadow: 0 0 10px #DCDCDC;
+  color: white;
+  margin-top: 10px;
+  width: 270px;
+}
+
+.boutonexplorer:hover {
+  filter: brightness(150%);
+  transition: ease 0.5s;
+  box-shadow: 0 0 15px #6C6C6C;
+}
+
+/* bouton fonction */
+.boutonentier {
+  position: relative;
+  width: 300px;
+  height: 80px;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: grab;
+  background-color: #F6F6F6;
+  box-shadow: 0 0 10px #DCDCDC;
+}
+
+.iconeettexte {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.chiffre {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  margin: 20px -20px;
+  background: #9356DC;
+  display: inline-block;
+  line-height: 0px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: white;
+}
+
+.chiffre span {
+  display: inline-block;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  margin-left: 12px;
+  margin-right: 8px;
+}
+
+.boutonentier:hover {
+  background-color: #E4CFFD;
+  filter: brightness(110%);
+  transition: ease 0.5s;
+  box-shadow: 0 0 15px grey;
+}
+
+.boutonentier:hover i {
+  color: #9356DC;
+}
+
+/* Page des 4 restaurants */
+.boutoncommander {
+  margin-top: 40px;
+  cursor: grab;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: white;
+  background: linear-gradient(-20deg, #9356DC, #FF79DA);
+  box-shadow: 0 0 12px #DCDCDC;
+}
+
+.boutoncommander:hover {
+  filter: brightness(150%);
+  transition: ease 0.5s;
+  box-shadow: 0 0 18px #6C6C6C;
+}
+
+.leboutoncommander {
+  text-align: center;
+  background-color: #F6F6F6;
+  height: 130px;
+}
+
+/* la page d'acceuille */
+.letitrelogoaccueil {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* les 4 restaurants */
+/* titre de l'aplication web + la fleche */
+.entetederestaurant {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.fleche {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.titleaplie {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 30px;
+}
+
+.letitrelogo {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+/* ____________ FOOTER _________ */
+.footerlink {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  padding: 10px;
+  background-color: black;
+  font-size: 17px;
+}
+
+.logodusite {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: "Shrikhand";
+  margin-left: 10px;
+}
+
+.logoetlien1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-left: 10px;
+}
+
+.logoetlien2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-left: 10px;
+}
+
+.lienmention {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin-left: 10px;
+}
+
+.liencontact {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  margin-left: 10px;
+}
+
+.footerlien, .fourchettecouteau, .poignedemains, .logodusite {
+  color: white;
+}
+
+.footerlien a {
+  text-decoration: none;
+  color: white;
+}
+
+/* les restaurant page d'accueil */
+.lesrestaurants {
+  transform: scale(1);
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.lesrestaurants:hover {
+  transform: scale(1.05);
+  transform: scale(1.005);
+}
+
+/* animation coeur */
+/* page d'accueil */
+.titledurestaurantpluscoeur .icontrois {
+  width: 30px;
+}
+
+.titledurestaurantpluscoeur .icontrois path {
+  fill: transparent;
+  stroke-width: 50;
+  stroke: black;
+}
+
+.titledurestaurantpluscoeur .icontrois.hearttrois path {
+  stroke-dasharray: 1580;
+  stroke-dashoffset: 0;
+}
+
+.titledurestaurantpluscoeur .icontrois:hover path {
+  stroke: transparent;
+}
+
+.titledurestaurantpluscoeur .icontrois.hearttrois:hover path {
+  animation: animate-heart 1s linear forwards;
+}
+
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #DE7FFD;
+  }
+}
+/* ______ SPIN LOADER ____ */
+.backgroundspinner {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  -webkit-animation: disparition 3s linear;
+  -o-animation: disparition 3s linear;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.chargement {
+  /*Création du loader */
+  border: 10px solid #F3F3F3;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  -webkit-animation: spin 3s linear infinite;
+  -o-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+  animation-iteration-count: 1;
+  opacity: 0;
+  /* Placement loader */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* Animation du loader */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    border-top: 10px solid #AF7AC5;
+    border-bottom: 10px solid #AF7AC5;
+  }
+  100% {
+    transform: rotate(360deg) scale(3);
+    opacity: 1;
+  }
+}
+/* page des restaurant */
+.nomdurestau .iconquatre {
+  width: 30px;
+}
+
+.nomdurestau .iconquatre path {
+  fill: transparent;
+  stroke-width: 50;
+  stroke: black;
+}
+
+.nomdurestau .iconquatre:hover path {
+  stroke: transparent;
+}
+
+.nomdurestau .iconquatre.heartquatre path {
+  stroke-dasharray: 1580;
+  stroke-dashoffset: 0;
+}
+
+.nomdurestau .iconquatre.heartquatre:hover path {
+  animation: animate-heartdeux 1s linear forwards;
+}
+
+@keyframes animate-heartdeux {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #DE7FFD;
+  }
+}
+.fill {
+  color: black;
+  cursor: pointer;
+}
+
+.fill:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* slide vers la gauche */
+/*validation animation */
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(-50px);
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.appears-with-opacity {
+  -webkit-animation: opacity 1s both;
+  animation: opacity 1s both;
+}
+
+/* apparation des dishs */
+#case-1 {
+  animation: apparition 0.5s ease-out;
+}
+
+#case-2 {
+  animation: apparition 1s ease-out;
+}
+
+#case-3 {
+  animation: apparition 1.5s ease-out;
+}
+
+#case-10 {
+  animation: apparition 1.7s ease-out;
+}
+
+#case-4 {
+  animation: apparition 2s ease-out;
+}
+
+#case-5 {
+  animation: apparition 2.5s ease-out;
+}
+
+#case-6 {
+  animation: apparition 3s ease-out;
+}
+
+#case-7 {
+  animation: apparition 3.5s ease-out;
+}
+
+#case-8 {
+  animation: apparition 4s ease-out;
+}
+
+#case-9 {
+  animation: apparition 4.5s ease-out;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 2000px) {
+  .fonction {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .fonctiontitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+  }
+
+  .boutonun {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .boutondeux {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .boutontrois {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .boutonentier {
+    margin-left: 200px;
+  }
+
+  .new {
+    top: 8%;
+    left: 88%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .boutonentier {
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .new {
+    top: 9%;
+    left: 83%;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .new {
+    left: 77%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .boutonentier {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new {
+    font-size: 15px;
+    left: 70%;
+    width: 90px;
+    height: 40px;
+  }
+
+  .new p {
+    text-align: center;
+  }
+
+  .fonction {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .fonctiontitle {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .boutonun {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .boutondeux {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .boutontrois {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .boutonentier {
+    margin-left: 40px;
+  }
+
+  /* les liens des 4 restaurants */
+  .lesliensrestaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 0.1fr;
+    grid-row-gap: 25px;
+    padding: 10px;
+  }
+
+  .liensrestaurantstitle {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 10px;
+  }
+
+  .restaurantun {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .restaurantdeux {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .restauranttrois {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .restaurantquatre {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
